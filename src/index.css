@@ -5,8 +5,7 @@
 @layer base {
     body {
         margin: 0;
-        @apply bg-PrimaryBg; /* ใช้คลาสสีที่กำหนดเอง */
-        @apply text-PrimaryBase
-        
+        @apply bg-PrimaryBg; /* Use the custom background color */
+        @apply text-PrimaryBase; /* Use the custom text color */
     }
 }

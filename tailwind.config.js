@@ -6,14 +6,18 @@ export default {
   ],
   theme: {
     extend: {colors: {
-      PrimaryTitle: '#127369',
-      PrimaryContent: '#4A5958',
-      PrimarySubContent: '#8AA6A3',
+      PrimaryTitle: '#5dbf4e',
+      PrimarySubtitle: '#498c3f',
+      PrimaryContent: '#8f96a6',
+      PrimarySubContent: '#8f96a6',
+      PrimarySubContent1: '#4b4f58',
+      PrimarySubContent2: '#3037304D',
       PrimaryBase: '#4C5958',
       PrimaryAccent: '#104038',
-      PrimaryBg: '#BFBFBF',
-
-      
+      PrimaryBg: '#0d0d0d',
+      PrimaryTest: '#030605',
+      PrimaryBtnFade:'#386f30',
+      primaryHeader:'#fff'
     },},
   },
   plugins: [],
