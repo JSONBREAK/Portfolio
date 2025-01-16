@@ -1,7 +1,7 @@
-import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faMedium, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-import picExp from '../assets/port.png'
-
+import picExp from '../assets/port.png';
+import picTest from '../assets/testpic.jpg'
 export const data = [
     {
         date: "2024-2025",
@@ -20,20 +20,20 @@ export const data = [
         picture: picExp,
     },
     {
-        date: "2024-2025",
-        title: "Portfolio",
-        link: "https://jetsurachok.netlify.app/",
+        date: "0000-9999",
+        title: "Date Tester",
+        link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
-            { type: faYoutube, link: "https://www.youtube.com/watch?v=DOUP5gwk2jI" },
+            { type: faMedium },
+   
         ],
         desscription: [
             "· A simple and minimalist portfolio for developers built with React and TailwindCSS, designed to be clean and fast."
         ],
         skill: [
-            ["React", "TailwindCSS", "NodeJS"]
+            ["Google", "Facebook", "Youtube"]
         ],
-        picture: picExp,
+        picture: picTest,
     }
 ];
 
