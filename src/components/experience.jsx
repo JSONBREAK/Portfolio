@@ -1,7 +1,9 @@
-import { faGithub, faMedium, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faMedium, faReact, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import picExp from '../assets/port.png';
-import picTest from '../assets/testpic.jpg'
+import picTest from '../assets/testpic.jpg';
+import picTodo from '../assets/todo.png';
+import { faFire } from "@fortawesome/free-solid-svg-icons";
 export const data = [
     {
         date: "2024-2025",
@@ -21,19 +23,52 @@ export const data = [
     },
     {
         date: "0000-9999",
-        title: "Date Tester",
+        title: "To-Do List App (Frontend + Backend)",
         link: "",
         material: [
-            { type: faMedium },
+            { type: faGithub }
    
         ],
         desscription: [
-            "· A simple and minimalist portfolio for developers built with React and TailwindCSS, designed to be clean and fast."
+            "· A task management application that allows users to create, add, edit, and delete tasks. It demonstrates effective state management using React.js for seamless interaction and dynamic updates."
         ],
         skill: [
-            ["Google", "Facebook", "Youtube"]
+            ["HTML", "CSS", "JavaScript","Node.js","Express","MongoDB"]
         ],
-        picture: picTest,
-    }
+        picture: picTodo,
+    },
+    {
+        date: "0000-9999",
+        title: "Weather App (Using API from OpenWeatherMap)",
+        link: "",
+        material: [
+            { type: faGithub }
+   
+        ],
+        desscription: [
+            "· A weather application that displays real-time weather data for different locations by fetching information from an API. It showcases efficient API integration and data presentation."
+        ],
+        skill: [
+            ["HTML", "CSS", "JavaScript","Node.js","Express","MongoDB"]
+        ],
+        picture: picTodo,
+    },
+    {
+        date: "0000-9999",
+        title: "E-Commerce Store",
+        link: "",
+        material: [
+            { type: faGithub }
+   
+        ],
+        desscription: [
+            "· An e-commerce website that allows users to browse products and complete purchases. It features functionalities such as form submissions, database integration, and shopping cart management."
+        ],
+        skill: [
+            ["React", "Bootstap", "Stripe API","Node.js","Express","Firebase"]
+        ],
+        picture: picTodo,
+    },
+
 ];
 
