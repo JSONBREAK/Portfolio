@@ -1,7 +1,7 @@
 import { faGithub, faMedium, faReact, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import picExp from '../assets/port.png';
-import picTest from '../assets/testpic.jpg';
+import weatherApp from '../assets/weatherapp.png';
 import picTodo from '../assets/todo.png';
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 export const data = [
@@ -23,6 +23,22 @@ export const data = [
     },
     {
         date: "0000-9999",
+        title: "Weather App (Using API from OpenWeatherMap)",
+        link: "",
+        material: [
+            { type: faGithub, link: "https://github.com/JSONBREAK/Weather-App" },
+   
+        ],
+        desscription: [
+            "· A weather application that displays real-time weather data for different locations by fetching information from an API. It showcases efficient API integration and data presentation."
+        ],
+        skill: [
+            ["CSS", "Ract.js","Node.js"]
+        ],
+        picture: weatherApp,
+    },
+    {
+        date: "0000-9999",
         title: "To-Do List App (Frontend + Backend)",
         link: "",
         material: [
@@ -37,22 +53,7 @@ export const data = [
         ],
         picture: picTodo,
     },
-    {
-        date: "0000-9999",
-        title: "Weather App (Using API from OpenWeatherMap)",
-        link: "",
-        material: [
-            { type: faGithub }
-   
-        ],
-        desscription: [
-            "· A weather application that displays real-time weather data for different locations by fetching information from an API. It showcases efficient API integration and data presentation."
-        ],
-        skill: [
-            ["HTML", "CSS", "JavaScript","Node.js","Express","MongoDB"]
-        ],
-        picture: picTodo,
-    },
+    
     {
         date: "0000-9999",
         title: "E-Commerce Store",
