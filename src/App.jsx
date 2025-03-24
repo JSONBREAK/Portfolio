@@ -1,20 +1,25 @@
-import './App.css'
-import LeftSection from './sections/LeftSection'
-import RightSection from './sections/RightSection'
-
+import { useState } from 'react';
+import LeftSection from './sections/LeftSection';
+import RightSection from './sections/RightSection';
 
 function App() {
+  const [sectionIds, setSectionIds] = useState([]);
+
+  const addSectionIds = (sectionId) => {
+    setSectionIds((prev) => prev.includes(sectionId) ? prev : [...prev, sectionId]);
+  };
 
   return (
-    <div className='max-w-6xl mx-auto'>
-      <div className='grid lg:grid-cols-[2fr_3fr] px-5 pb-7 pt-14 font-poppins tracking-wide'>
-      <LeftSection/>
-      <RightSection/>
+    <div className="mt-14 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 md:px-8">
+      {/* ส่วนซ้าย */}
+      <LeftSection />
+      {/* ส่วนขวา */}
+      <RightSection
+        onInitial={addSectionIds}
+        sectionIds={sectionIds}
+      />
     </div>
-    </div>
-    
-
-  )
+  );
 }
 
-export default App
+export default App;

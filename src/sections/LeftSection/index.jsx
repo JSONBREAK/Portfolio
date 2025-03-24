@@ -2,18 +2,16 @@ import Contact from "..//Contact"
 import Header from "..//Header"
 import NavBar from "../Navbar"
 
-
-
 const LeftSection = () => {
-    return(
-        <div className="sticky top-14 lg:h-[90vh] grid grid-rows-[70%_30%] gap-6 lg:grid-rows-[3fr_40%_20%] lg:gap-14">
-        <div className='sticky top-14 grid gap-y-5 lg:grid-rows-[50%_25%_25%] lg:h-[87vh]'> 
-          <Header/>
-          <NavBar/>
-          <Contact/>
-        </div>
+  return (
+    <div className="px-5 pb-10 lg:pb-2 lg:mb-0">
+      <div className='sticky top-14 px-5 grid gap-y-6 lg:grid-rows-[35%_40%_25%] lg:h-[86vh]'>
+        <Header />
+        <NavBar />
+        <Contact />
       </div>
-    )
+    </div>
+  );
 }
 
-export default LeftSection
+export default LeftSection;  
