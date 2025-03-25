@@ -16,7 +16,7 @@ const ContentContainer = ({
         return null;
     return (
         <div id={SECTION_ID} className="text-primarySubContent1">
-            <div className="text-PrimarySubtitle font-medium ">{sectionTitle}</div>
+            <div className="text-green-500 font-medium ">{sectionTitle}</div>
             {
 
                 data.map(({
