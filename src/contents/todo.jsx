@@ -25,7 +25,23 @@ export const data = [
     
     {
         date: "0000-9999",
-        title: "E-Commerce Store",
+        title: "Recipe Finder",
+        link: "",
+        material: [
+            { type: faGithub }
+   
+        ],
+        desscription: [
+            "· A recipe search application that lets users search for recipes by ingredients. It uses the Spoonacular API to fetch recipe data and display it to users with options to view ingredient lists, cooking instructions, and images. This project demonstrates API calls and data rendering in React."
+        ],
+        skill: [
+            ["React", "Axios", "Tailwind CSS"]
+        ],
+        picture: picTodo,
+    },
+    {
+        date: "0000-9999",
+        title: "Personal Finance Manager",
         link: "",
         material: [
             { type: faGithub }
@@ -35,7 +51,23 @@ export const data = [
             "· An e-commerce website that allows users to browse products and complete purchases. It features functionalities such as form submissions, database integration, and shopping cart management."
         ],
         skill: [
-            ["React", "Bootstap", "Stripe API","Node.js","Express","Firebase"]
+            ["React", "Redux", "Node.js", "Express.js","MongoDB", "Chart.js"]
+        ],
+        picture: picTodo,
+    },
+    {
+        date: "0000-9999",
+        title: "Food Delivery App",
+        link: "",
+        material: [
+            { type: faGithub }
+   
+        ],
+        desscription: [
+            "· An e-commerce website that allows users to browse products and complete purchases. It features functionalities such as form submissions, database integration, and shopping cart management."
+        ],
+        skill: [
+            ["React", "Context API", "JWT","Google Maps API","Bootstrap"]
         ],
         picture: picTodo,
     },

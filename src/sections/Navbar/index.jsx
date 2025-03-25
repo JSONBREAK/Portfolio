@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,39 +8,39 @@ const Navbar = () => {
   const navs = [
     { title: "About", sectionId: "About-section" },
     { title: "Project", sectionId: "Project-section" },
-    { title: "Learning & Research", sectionId: "LearningResearch-section" },
-    { title: "To-Do List", sectionId: "ToDoList-section" },
+    { title: "Learning & Research", sectionId: "Learning&Research-section" },  // ใช้ชื่อเดียวกัน
+    { title: "To-Do List", sectionId: "ToDo-section" },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // ถ้า scroll อยู่ที่ตำแหน่ง < 8 ให้ currentSection เป็น About-section
-      if (window.scrollY < 8) {
-        setCurrentSection("About-section");
-        return;
-      }
+  const handleScroll = useCallback(() => {
+    // ถ้า scroll อยู่ที่ตำแหน่ง < 8 ให้ currentSection เป็น About-section
+    if (window.scrollY < 8) {
+      setCurrentSection("About-section");
+      return;
+    }
 
-      // ตรวจสอบว่า scroll อยู่ในช่วงของ section นี้
-      navs.forEach((nav) => {
-        const section = document.getElementById(nav.sectionId);
-        if (section) {
-          const { offsetTop, clientHeight } = section;
-          if (
-            window.scrollY >= offsetTop - clientHeight / 2 &&
-            window.scrollY < offsetTop + clientHeight - clientHeight / 2
-          ) {
-            setCurrentSection(nav.sectionId); // เปลี่ยน currentSection
-          }
+    // ตรวจสอบว่า scroll อยู่ในช่วงของ section นี้
+    navs.forEach((nav) => {
+      const section = document.getElementById(nav.sectionId);
+      if (section) {
+        const { offsetTop, clientHeight } = section;
+        if (
+          window.scrollY >= offsetTop - clientHeight / 2 &&
+          window.scrollY < offsetTop + clientHeight - clientHeight / 2
+        ) {
+          setCurrentSection(nav.sectionId); // เปลี่ยน currentSection
         }
-      });
-    };
+      }
+    });
+  }, [navs]);
 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [navs]);
+  }, [handleScroll]);
 
   const handleClick = (sectionId) => {
     // เมื่อคลิกที่ About หรือ section อื่นๆ
@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col font-semibold mt-7 ml-5 hidden lg:block"> {/* Add hidden lg:block for responsive */}
+    <div className="flex flex-col font-semibold mt-7 ml-5 hidden lg:block">
       {navs.map((e, i) => (
         <div
           key={`nav-${e.sectionId}-${i}`}

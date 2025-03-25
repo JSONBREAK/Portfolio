@@ -19,20 +19,17 @@ const RightSection = ({ onInitial }) => {
         onInitial={onInitial}
       />
 
-      {/* Learning & Research section */}
       <ContentContainer
-        title="LearningResearch"
-        data={learningData} // Verify if this is correct or change the data source
+        title="Learning&Research" // ใช้ชื่อเดียวกับใน Navbar
+        data={learningData}
         onInitial={onInitial}
-
       />
-      {/* TO-DO section */}
+
       <ContentContainer
-        title="ToDoList"
+        title="ToDo" // ใช้ชื่อที่ตรงกันกับใน Navbar
         data={todoData}
         onInitial={onInitial}
       />
-
 
       <Footer />
     </div>

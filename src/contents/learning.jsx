@@ -8,7 +8,7 @@ export const data = [
     {
         date: "",
         title: "Docker",
-        link: "https://jetsurachok.netlify.app/",
+        link: "",
         material: [
             { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
 
@@ -24,9 +24,9 @@ export const data = [
     {
         date: "",
         title: "REST API",
-        link: "https://jetsurachok.netlify.app/",
+        link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
+            { type: faGithub, link: "https://github.com/JSONBREAK" },
 
         ],
         desscription: [
@@ -40,9 +40,9 @@ export const data = [
     {
         date: "",
         title: "FastAPI",
-        link: "https://jetsurachok.netlify.app/",
+        link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
+            { type: faGithub, link: "https://github.com/JSONBREAK" },
 
         ],
         desscription: [
@@ -58,9 +58,9 @@ export const data = [
     {
         date: "",
         title: "MongoDB",
-        link: "https://jetsurachok.netlify.app/",
+        link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
+            { type: faGithub, link: "https://github.com/JSONBREAK" },
 
         ],
         desscription: [
