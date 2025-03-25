@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Contact = () => {
     return (
-        <div className='gap-4 text-2xl flex items-end '>
+        <div className='gap-4 text-2xl flex items-end pl-6'>
 
             <div>
                 <a href="https://www.facebook.com/jet.surachokk" target="_blank" rel="noopener noreferrer">
