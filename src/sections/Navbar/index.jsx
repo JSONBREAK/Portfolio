@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col font-semibold mt-7 ml-5">
+    <div className="flex flex-col font-semibold mt-7 ml-5 hidden lg:block"> {/* Add hidden lg:block for responsive */}
       {navs.map((e, i) => (
         <div
           key={`nav-${e.sectionId}-${i}`}
