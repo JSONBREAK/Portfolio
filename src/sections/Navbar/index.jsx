@@ -7,9 +7,9 @@ const Navbar = () => {
 
   const navs = [
     { title: "About", sectionId: "About-section" },
-    { title: "Experience", sectionId: "Experience-section" },
     { title: "Project", sectionId: "Project-section" },
-    { title: "Article", sectionId: "Article-section" },
+    { title: "Learning & Research", sectionId: "LearningResearch-section" },
+    { title: "To-Do List", sectionId: "ToDoList-section" },
   ];
 
   useEffect(() => {
