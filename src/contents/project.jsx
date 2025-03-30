@@ -42,7 +42,7 @@ export const data = [
         title: "Recipe Finder",
         link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK/Weather-App" },
+            { type: faGithub, link: "https://github.com/JSONBREAK/Recipe-Finder" },
    
         ],
         description: [
