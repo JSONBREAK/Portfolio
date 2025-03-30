@@ -14,7 +14,7 @@ export const data = [
             { type: faGithub }
    
         ],
-        desscription: [
+        description: [
             "· A task management application that allows users to create, add, edit, and delete tasks. It demonstrates effective state management using React.js for seamless interaction and dynamic updates."
         ],
         skill: [
@@ -31,7 +31,7 @@ export const data = [
             { type: faGithub }
    
         ],
-        desscription: [
+        description: [
             "· A recipe search application that lets users search for recipes by ingredients. It uses the Spoonacular API to fetch recipe data and display it to users with options to view ingredient lists, cooking instructions, and images. This project demonstrates API calls and data rendering in React."
         ],
         skill: [
@@ -47,7 +47,7 @@ export const data = [
             { type: faGithub }
    
         ],
-        desscription: [
+        description: [
             "· An e-commerce website that allows users to browse products and complete purchases. It features functionalities such as form submissions, database integration, and shopping cart management."
         ],
         skill: [
@@ -63,7 +63,7 @@ export const data = [
             { type: faGithub }
    
         ],
-        desscription: [
+        description: [
             "· An e-commerce website that allows users to browse products and complete purchases. It features functionalities such as form submissions, database integration, and shopping cart management."
         ],
         skill: [

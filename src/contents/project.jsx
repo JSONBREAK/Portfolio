@@ -13,7 +13,7 @@ export const data = [
             { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
             { type: faYoutube, link: "https://www.youtube.com/watch?v=DOUP5gwk2jI" },
         ],
-        desscription: [
+        description: [
             "· A simple and minimalist portfolio for developers built with React and TailwindCSS, designed to be clean and fast."
         ],
         skill: [
@@ -29,7 +29,7 @@ export const data = [
             { type: faGithub, link: "https://github.com/JSONBREAK/Weather-App" },
    
         ],
-        desscription: [
+        description: [
             "· A weather application that displays real-time weather data for different locations by fetching information from an API. It showcases efficient API integration and data presentation."
         ],
         skill: [
@@ -37,5 +37,21 @@ export const data = [
         ],
         picture: weatherApp,
     },   
+    {
+        date: "2025-2025",
+        title: "Recipe Finder",
+        link: "",
+        material: [
+            { type: faGithub, link: "https://github.com/JSONBREAK/Weather-App" },
+   
+        ],
+        description: [
+            "· A recipe search application that lets users search for recipes by ingredients. It uses the Spoonacular API to fetch recipe data and display it to users with options to view ingredient lists, cooking instructions, and images. This project demonstrates API calls and data rendering in React."
+        ],
+        skill: [
+            ["React", "Axios","Node.js","HTML","Tailwind CSS"]
+        ],
+        picture: "",
+    }, 
 ];
 

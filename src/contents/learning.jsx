@@ -3,75 +3,75 @@ import picRestAPI from '../assets/restAPI.png';
 import picFastAPI from '../assets/fastAPI.png';
 import picMongodb from '../assets/mongodb.png';
 import picDocker from '../assets/docker.png';
-import { faFire } from "@fortawesome/free-solid-svg-icons";
+import { faFire, faGlobe } from "@fortawesome/free-solid-svg-icons";
+
 export const data = [
     {
-        date: "",
+        date: "2023-01-10",
         title: "Docker",
         link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK/Portfolio" },
-
+            { type: faGlobe, link: "https://www.docker.com/" }
         ],
-        desscription: [
-            "· การใช้ Container ช่วยจัดการแอปพลิเคชันให้รันได้ทุกที่ "
+        description: [
+            "Docker is a containerization platform that allows you to package and deploy applications in isolated environments, ensuring they run seamlessly anywhere."
         ],
         skill: [
-            ["Container Platform"]
+            ["Containerization"],
+            ["Microservices Architecture"],
+            ["DevOps"]
         ],
         picture: picDocker,
     },
     {
-        date: "",
+        date: "2023-02-15",
         title: "REST API",
         link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK" },
-
+            { type: faGlobe, link: "https://restfulapi.net/" }
         ],
-        desscription: [
-            "· การออกแบบ API ที่ใช้ HTTP Protocol ให้บริการข้อมูลแบบ Client-Server "
+        description: [
+            "REST APIs are designed to facilitate communication between client and server using HTTP protocols, providing a stateless and scalable way of interacting with systems."
         ],
         skill: [
-            ["API"]
+            ["API Design"],
+            ["HTTP Protocols"],
+            ["Web Services"]
         ],
         picture: picRestAPI,
     },
     {
-        date: "",
+        date: "2023-03-01",
         title: "FastAPI",
         link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK" },
-
+            { type: faGlobe, link: "https://fastapi.tiangolo.com/" }
         ],
-        desscription: [
-            "· Framework สำหรับสร้าง API ด้วย Python ที่เร็วและรองรับ Async "
+        description: [
+            "FastAPI is a modern, high-performance web framework for building APIs with Python, designed to build efficient and asynchronous APIs."
         ],
         skill: [
-            ["API Framework"]
+            ["API Development"],
+            ["Asynchronous Programming"],
+            ["Python Frameworks"]
         ],
         picture: picFastAPI,
     },
-    
-    
     {
-        date: "",
+        date: "2023-04-10",
         title: "MongoDB",
         link: "",
         material: [
-            { type: faGithub, link: "https://github.com/JSONBREAK" },
-
+            { type: faGlobe, link: "https://www.mongodb.com/" }
         ],
-        desscription: [
-            "· NoSQL Database ที่เก็บข้อมูลแบบ JSON เหมาะกับ API และ Big Data "
+        description: [
+            "MongoDB is a NoSQL database that stores data in a flexible, JSON-like format, ideal for applications requiring fast read/write operations and scalability."
         ],
         skill: [
-            ["NoSQL Databas"]
+            ["NoSQL Databases"],
+            ["Data Modeling"],
+            ["Big Data"]
         ],
         picture: picMongodb,
     },
-
-    
 ];
-
