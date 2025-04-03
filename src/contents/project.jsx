@@ -4,6 +4,8 @@ import picExp from '../assets/port.png';
 import weatherApp from '../assets/weatherapp.png';
 import picTodo from '../assets/todo.png';
 import { faFire } from "@fortawesome/free-solid-svg-icons";
+import picRecipeFinder from '../assets/RecipeFinder.png';
+
 export const data = [
     {
         date: "2024-2025",
@@ -49,9 +51,9 @@ export const data = [
             "· A recipe search application that lets users search for recipes by ingredients. It uses the Spoonacular API to fetch recipe data and display it to users with options to view ingredient lists, cooking instructions, and images. This project demonstrates API calls and data rendering in React."
         ],
         skill: [
-            ["React", "Axios","Node.js","HTML","Tailwind CSS"]
+            ["React","Tailwind CSS" , "daisyUI","Node.js","lucide-react"]
         ],
-        picture: "",
+        picture: picRecipeFinder,
     }, 
 ];
 

@@ -34,15 +34,14 @@ const ContentContainer = ({
                         onMouseEnter={() => setIsMouseEnter({ [`${SECTION_ID}-${index}`]: true })}
                         onMouseLeave={() => setIsMouseEnter({ [`${SECTION_ID}-${index}`]: false })}
                     >
-                        <div>
+                        <div className="pr-20">
                             <FormattedDate isHover={isMouseEnter[[`${SECTION_ID}-${index}`]]}>{date}</FormattedDate>
                             <Picture
                                 pic={picture}
-                                title={title}
-                                className="absolute inset-0 w-full h-full object-cover"
+                                title={title} 
                             />
                         </div>
-                        <div className="flex flex-col space-y-4">
+                        <div className="flex flex-col space-y-2 pt-2">
                             <TitleLink isHover={isMouseEnter[[`${SECTION_ID}-${index}`]]} title={title} link={link} />
                             {material.length > 0 ? (
                                 <div className="text-xl flex gap-4 items-center">
