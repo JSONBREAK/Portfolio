@@ -22,23 +22,6 @@ export const data = [
         ],
         picture: picTodo,
     },
-    
-    {
-        date: "0000-9999",
-        title: "Recipe Finder",
-        link: "",
-        material: [
-            { type: faGithub }
-   
-        ],
-        description: [
-            "· A recipe search application that lets users search for recipes by ingredients. It uses the Spoonacular API to fetch recipe data and display it to users with options to view ingredient lists, cooking instructions, and images. This project demonstrates API calls and data rendering in React."
-        ],
-        skill: [
-            ["React", "Axios", "Tailwind CSS"]
-        ],
-        picture: picTodo,
-    },
     {
         date: "0000-9999",
         title: "Personal Finance Manager",
