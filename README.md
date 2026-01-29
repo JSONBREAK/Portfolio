@@ -1,3 +1,5 @@
+- Added true fullscreen image popup modal using React Portal
++ Icons (e.g. GitHub) are only shown if a URL is provided
 
 # Portfolio Website (React + Vite)
 
