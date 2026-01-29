@@ -1,6 +1,13 @@
 
 # Portfolio Website (React + Vite)
+
 ## Recent Improvements (2026)
+- Enhanced About section readability and visual separation
+- Added/removed accent elements for cleaner design
+- Tuned color, background, and text contrast for dark mode
+- Fixed sidebar navigation bugs (ID, scroll, highlight)
+- Refactored code for maintainability and readability
++ Added true fullscreen image popup modal using React Portal
 
 - Improved card and section layouts for clarity and modern look
 - Adjusted spacing and alignment for all sections
