@@ -8,7 +8,7 @@ const Navbar = () => {
   const navs = [
     { title: "About", sectionId: "About-section" },
     { title: "Project", sectionId: "Project-section" },
-    { title: "Learning & Research", sectionId: "Learning&Research-section" },  // ใช้ชื่อเดียวกัน
+    { title: "Learning & Research", sectionId: "LearningAndResearch-section" },
     { title: "To-Do List", sectionId: "ToDo-section" },
   ];
 
@@ -19,19 +19,23 @@ const Navbar = () => {
       return;
     }
 
-    // ตรวจสอบว่า scroll อยู่ในช่วงของ section นี้
+    // หา section ที่อยู่ใกล้ขอบบนของ viewport ที่สุด
+    let minDistance = Infinity;
+    let closestSection = null;
     navs.forEach((nav) => {
       const section = document.getElementById(nav.sectionId);
       if (section) {
-        const { offsetTop, clientHeight } = section;
-        if (
-          window.scrollY >= offsetTop - clientHeight / 2 &&
-          window.scrollY < offsetTop + clientHeight - clientHeight / 2
-        ) {
-          setCurrentSection(nav.sectionId); // เปลี่ยน currentSection
+        const rect = section.getBoundingClientRect();
+        const distance = Math.abs(rect.top);
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestSection = nav.sectionId;
         }
       }
     });
+    if (closestSection) {
+      setCurrentSection(closestSection);
+    }
   }, [navs]);
 
   useEffect(() => {

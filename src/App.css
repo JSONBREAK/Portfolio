@@ -1,0 +1,39 @@
+
+/* Glassmorphism + Gradient + Shadow for Card */
+
+/* เทาเข้ม + soft green accent */
+.card-glassmorph {
+	background: linear-gradient(135deg, rgba(93,191,78,0.05) 0%, rgba(35,39,47,0.10) 100%);
+	backdrop-filter: blur(7px) saturate(115%);
+	border: 1.2px solid rgba(93,191,78,0.07);
+	box-shadow: 0 2px 16px 0 rgba(93,191,78,0.03), 0 1.5px 8px 0 rgba(35,39,47,0.10);
+	transition: box-shadow 0.4s, border 0.4s, transform 0.3s;
+}
+.card-glow {
+	box-shadow: 0 0 8px 2px #5dbf4e22, 0 2px 8px 0 #23272f33;
+	border: 1.2px solid #5dbf4e22;
+}
+
+/* Tech Tag Gradient & Animation */
+.tech-tag {
+	background: linear-gradient(90deg, #5dbf4e14 0%, #23272f33 100%);
+	color: #3c8c32;
+	border: 1px solid #5dbf4e14;
+	box-shadow: 0 1px 4px 0 #5dbf4e07;
+}
+.tech-tag-hover {
+	background: linear-gradient(90deg, #5dbf4e44 0%, #23272f77 100%);
+	color: #eaffea;
+	border: 1.2px solid #5dbf4e44;
+	box-shadow: 0 2px 8px 0 #5dbf4e11;
+	transform: scale(1.015);
+}
+
+/* Picture Glow Effect */
+.picture-glow {
+	box-shadow: 0 0 0 0 #5dbf4e00, 0 2px 8px 0 #10403822;
+}
+.picture-glow:hover {
+	box-shadow: 0 0 8px 2px #5dbf4e33, 0 2px 8px 0 #10403822;
+	border-color: #5dbf4e55;
+}

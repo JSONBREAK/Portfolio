@@ -17,7 +17,7 @@ const Header = () => {
       </div>
 
       {/* Caption */}
-      <div className='text-PrimaryContent text-sm w-full sm:w-5/6 pb-4 text-left'>
+      <div className='text-zinc-400 text-sm w-full sm:w-5/6 pb-4 text-left'>
         {data.caption}
       </div>
 

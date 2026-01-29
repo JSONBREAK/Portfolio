@@ -1,4 +1,11 @@
 export const data = {
-  title:"About",
-  description: `I am a recent Computer Engineering graduate passionate about programming and technology. Though I haven't yet gained professional experience, I have honed my skills through projects and personal learning. I am eager to apply my knowledge and grow in a real-world development environment, learning from experienced professionals. My goal is to contribute to impactful projects and continuously improve my technical abilities.`,
+  title: "About",
+  description: `This website is my personal space to document what I build and what I learn.
+
+I come from a software development background and am currently focusing on
+quality assurance, API testing, and system validation to better understand
+how real-world systems behave in production.
+
+I enjoy breaking things (intentionally), asking “what if?”, and improving
+software quality through structured testing and technical understanding.`,
 };

@@ -17,12 +17,7 @@ const Contact = () => {
                     <FontAwesomeIcon className=' text-PrimaryBase duration-700 hover:scale-125 hover:text-PrimaryTitle' icon={faGithub} />
                 </a>
             </div>
-            <div>
-            <a href="https://bold.pro/my/surachok-kaewchan/681r" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className=' text-PrimaryBase duration-700 hover:scale-125 hover:text-PrimaryTitle' icon={faBold} />
-                </a>
-
-            </div>
+            {/* ลบ bold.pro icon ออกตามคำขอ */}
         </div>
     )
 }
