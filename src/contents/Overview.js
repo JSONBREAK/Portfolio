@@ -21,7 +21,4 @@ export const sections = [
     title: "To-Do List",
     data: todoData,
   },
-
-
-  
 ];

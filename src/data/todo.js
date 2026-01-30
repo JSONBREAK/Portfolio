@@ -4,7 +4,24 @@ import weatherApp from '../assets/weatherapp.png';
 import picTodo from '../assets/todo.png';
 import picQA from '../assets/qa.png';
 import { faFire } from "@fortawesome/free-solid-svg-icons";
+import picPython from '../assets/python.jpg';
+
 export const data = [
+    {
+        date: "0000-9999",
+        title: "Python Basics",
+        link: "",
+        material: [
+            { type: faGithub }
+        ],
+        description: [
+            "· A beginner-friendly project to learn the basics of Python programming, including syntax, data types, control structures, and functions."
+        ],
+        skill: [
+            [ "Python", "Basics", "Programming" ]
+        ],
+        picture: picPython,
+    },
     {
         date: "0000-9999",
         title: "Personal Finance Manager",
