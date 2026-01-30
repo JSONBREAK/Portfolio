@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { sections } from "../../contents/Overview";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,9 +8,7 @@ const Navbar = () => {
 
   const navs = [
     { title: "About", sectionId: "About-section" },
-    { title: "Project", sectionId: "Project-section" },
-    { title: "Learning & Research", sectionId: "LearningAndResearch-section" },
-    { title: "To-Do List", sectionId: "ToDo-section" },
+    ...sections.map(s => ({ title: s.title, sectionId: s.id }))
   ];
 
   const handleScroll = useCallback(() => {

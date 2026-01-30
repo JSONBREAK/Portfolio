@@ -1,6 +1,6 @@
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { data } from '../../data/header';
+import { data } from '../../contents/header';
 import Navbar from '../Navbar';
 
 const Header = () => {

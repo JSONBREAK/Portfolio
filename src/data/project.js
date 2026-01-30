@@ -1,4 +1,5 @@
 import { faGithub, faMedium, faReact, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 import picExp from '../assets/port.png';
 import weatherApp from '../assets/weatherapp.png';
 import picTodo from '../assets/todo.png';
@@ -37,6 +38,21 @@ export const data = [
             ["CSS", "Ract.js","Node.js","HTML"]
         ],
         picture: weatherApp,
-    },
-    // ...rest of the data
+    },   
+    {
+        date: "2025-2025",
+        title: "Recipe Finder",
+        link: "",
+        material: [
+            { type: faGithub, link: "https://github.com/JSONBREAK/Recipe-Finder" },
+   
+        ],
+        description: [
+            "· A recipe search application that lets users search for recipes by ingredients. It uses the Spoonacular API to fetch recipe data and display it to users with options to view ingredient lists, cooking instructions, and images. This project demonstrates API calls and data rendering in React."
+        ],
+        skill: [
+            ["React","Tailwind CSS" , "daisyUI","Node.js","lucide-react"]
+        ],
+        picture: picRecipeFinder,
+    }, 
 ];
