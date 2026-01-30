@@ -1,9 +1,9 @@
 import ContentContainer from "../../components/ContentContainer";
 import About from "../About";
 
-import { data as projectData } from "../../contents/project";
-import { data as CurrentFocusData } from "../../contents/learning";
-import { data as todoData } from "../../contents/todo";
+import { data as projectData } from "../../data/project";
+import { data as CurrentFocusData } from "../../data/learning";
+import { data as todoData } from "../../data/todo";
 import Footer from "../Footer";
 
 const RightSection = ({ onInitial }) => {

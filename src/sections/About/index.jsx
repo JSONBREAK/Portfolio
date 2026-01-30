@@ -1,4 +1,4 @@
-import { data } from '../../contents/about';
+import { data } from '../../data/about';
 
 const About = () => {  
     return (

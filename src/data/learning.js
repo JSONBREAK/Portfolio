@@ -28,18 +28,18 @@ export const data = [
         date: "2026-01-29",
         title: "Postman",
         link: "",
-        // ...existing code...
-            { type: faGlobe, link: "https://playwright.dev/" }
+        material: [
+            { type: faGlobe, link: "https://www.postman.com/" }
         ],
         description: [
-            "Playwright is an end-to-end testing framework for web apps, supporting multiple browsers and powerful automation capabilities."
+            "Postman is a collaboration platform for API development, making it easy to test, document, and monitor APIs."
         ],
         skill: [
-            ["End-to-End Testing"],
+            ["API Testing"],
             ["Automation"],
-            ["Cross-Browser"]
+            ["Collaboration"]
         ],
-        picture: picPlaywright,
+        picture: picPostman,
     },
-    // ...existing code...
+    // ...rest of the data
 ];
