@@ -1,10 +1,6 @@
 import { faGithub, faMedium, faReact, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import picRestAPI from '../assets/restAPI.png';
-import picPostman from '../assets/postman.png';
-import picFastAPI from '../assets/fastAPI.png';
-import picMongodb from '../assets/mongodb.png';
-import picDocker from '../assets/docker.png';
 import picQA from '../assets/qa.png';
+import picPostman from '../assets/postman.png';
 import picPlaywright from '../assets/playwright.png';
 import { faFire, faGlobe } from "@fortawesome/free-solid-svg-icons";
 

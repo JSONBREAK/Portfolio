@@ -8,7 +8,7 @@ import picPython from '../assets/python.jpg';
 
 export const data = [
     {
-        date: "0000-9999",
+        date: "as freetime",
         title: "Python Basics",
         link: "",
         material: [
