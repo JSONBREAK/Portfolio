@@ -4,15 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Footer = () => {
     return(
-        <div className="mb-10">
-            <div className="flex justify-end">
-                <span>
-                    Powered by React.js and Tailwind
-                    <a href="https://github.com/JSONBREAK/Portfolio" target="_blank">
-                    <FontAwesomeIcon className="ml-2" icon={faGithub}/>
+        <div className="mt-12 pt-8 border-t border-gray-800">
+            <div className="flex justify-between items-center text-xs text-gray-500">
+                <span>© 2026 Jet Surachok</span>
+                <div className="flex items-center gap-3">
+                    <span>Powered by React.js & Tailwind CSS</span>
+                    <a href="https://github.com/JSONBREAK/Portfolio" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition">
+                        <FontAwesomeIcon icon={faGithub}/>
                     </a>
-                    
-                </span>
+                </div>
             </div>
         </div>
     )

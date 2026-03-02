@@ -20,6 +20,7 @@ export const manualTestingData = [
       { name: "Decision Table Testing", icon: faLayerGroup },
       { name: "State Transition Testing", icon: faArrowsRotate },
       { name: "Risk-Based Testing", icon: faExclamationTriangle },
+      { name: "Test Case Prioritization", icon: faLayerGroup },
     ],
   },
   {
@@ -30,7 +31,7 @@ export const manualTestingData = [
       { name: "Positive Scenarios", icon: faCheckDouble },
       { name: "Negative Scenarios", icon: faBug },
       { name: "Validation Testing", icon: faExclamationTriangle },
-      { name: "Session & Edge Cases", icon: faArrowsRotate },
+      { name: "Edge Case & Exploratory Testing", icon: faArrowsRotate },
       { name: "Business Flow Testing", icon: faClipboardList },
     ],
   },
@@ -44,6 +45,7 @@ export const manualTestingData = [
       { name: "RTM (Requirement Traceability)", icon: faFileAlt },
       { name: "Test Reporting", icon: faChartBar },
       { name: "STLC Framework", icon: faArrowsRotate },
+      { name: "Root Cause Analysis", icon: faBug },
     ],
   },
 ];

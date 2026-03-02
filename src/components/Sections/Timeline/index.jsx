@@ -2,13 +2,13 @@ import { timelineData } from "../../../constants/timeline";
 
 const Timeline = () => {
   return (
-    <div className="px-5 mb-8">
+    <div className="mb-8">
       {/* Timeline - Milestones Heading */}
-      <div className="mb-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-100 mb-3">
+      <div className="mb-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-green-400 mb-1">
           Milestones
         </h2>
-        <p className="text-gray-400 text-sm md:text-base max-w-2xl">
+        <p className="text-gray-500 text-xs">
           Key learning stages from CPE fundamentals through QA mastery to DevOps excellence.
         </p>
       </div>

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className='flex flex-col gap-3 max-w-4xl mx-auto px-5'>
       {/* Name */}
-      <div className='text-4xl md:text-5xl font-bold text-green-400 pb-2 text-left'>
+      <div className='text-3xl md:text-4xl font-bold text-green-400 pb-2 text-left'>
         {data.name}
       </div>
 

@@ -13,7 +13,7 @@ export const githubRepos = [
     },
     {
         name: "qa-learning-journey-repository",
-        description: "Complete QA knowledge roadmap - fundamentals to technical skills",
+        description: "Structured QA knowledge base covering test design, risk analysis, STLC, and practical validation frameworks",
         language: "Markdown",
         languageColor: "#083fa1",
         stars: 0,
@@ -23,7 +23,7 @@ export const githubRepos = [
     },
     {
         name: "qa-saucedemo-test-automation",
-        description: "E2E automation with Playwright using Page Object Model",
+        description: "Deterministic E2E automation framework using Playwright (POM) with isolated test design, CI-ready execution, and flaky test prevention strategy",
         language: "JavaScript",
         languageColor: "#f7df1e",
         stars: 0,
@@ -33,7 +33,7 @@ export const githubRepos = [
     },
     {
         name: "qa-saucedemo-test-design",
-        description: "Manual QA test design with STLC and requirements traceability",
+        description: "Manual test design documentation including STLC workflow, requirement traceability matrix (RTM), and risk-based scenario planning",
         language: "Markdown",
         languageColor: "#083fa1",
         stars: 0,
@@ -43,7 +43,7 @@ export const githubRepos = [
     },
     {
         name: "Portfolio",
-        description: "Personal portfolio - React + Vite + TailwindCSS",
+        description: "A personal playground project built with React, Vite, and TailwindCSS to practice frontend structure, component design, and clean UI implementation.",
         language: "JavaScript",
         languageColor: "#f7df1e",
         stars: 0,
