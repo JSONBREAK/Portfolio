@@ -1,99 +1,178 @@
-# Portfolio Website (React + Vite)
+# QA Learning Journey Portfolio (React + Vite)
 
-**Date:** January 29, 2026
+**Last Updated:** March 2, 2026
 
-After a long break, I decided to revive and modernize my old portfolio website.  
-This project is a way to refresh my React and frontend skills while building something practical in my free time.
-
----
-
-## About This Website
-
-- Personal portfolio for showcasing projects, learning progress, and technical interests
-- Built with **React**, **Vite**, and **Tailwind CSS**
-- Fully responsive layout with clean sidebar navigation
-- Designed for easy maintenance and content updates
-- Config-driven architecture for scalable section management
+A modern, responsive portfolio showcasing my complete QA and automation testing learning journey - from fundamentals to DevOps aspirations. Built with React, Vite, and Tailwind CSS.
 
 ---
 
-## Recent Improvements (2026)
+## 🎯 About This Portfolio
 
-- Refactored codebase for better maintainability and readability
-- Improved About section readability and visual separation
-- Enhanced card and section layouts for a cleaner, modern look
-- Tuned colors, background, and text contrast for dark mode
-- Fixed sidebar navigation bugs (ID sync, scroll behavior, active highlight)
-- Added true fullscreen image popup modal using **React Portal**
-- Removed unused files and refined UI accent elements
+- **Personal Portfolio** documenting 5 years of learning: CPE → IT Break → QA Manual → QA Automation → DevOps
+- **Interactive Timeline** visualizing career milestones and learning progression
+- **QA Skills Showcase** with manual testing techniques and automation framework experience
+- **GitHub Repository** links to 5 learning repositories
+- **Responsive Design** with clean sidebar navigation (40% left, 60% right content)
+- **OOP Architecture** with organized component structure and centralized data management
 
 ---
 
-## Project Structure (2026)
+## 🚀 Recent Updates (2026)
 
+### Code Architecture Restructuring
+- ✅ Implemented OOP principles with organized folder structure
+- ✅ Separated components by responsibility: **Layout**, **Sections**, **Contact**
+- ✅ Centralized data in **constants/** folder
+- ✅ Organized styles in **styles/** folder
+- ✅ Updated all import paths for better maintainability
+
+### New Features
+- ✅ **Timeline Component** - Career milestones visualization
+- ✅ **QA Manual Testing Section** - 15 test design techniques and QA concepts
+- ✅ **QA Automation Testing Section** - Framework knowledge, CI/CD, test automation
+- ✅ **GitHub Repositories Section** - 5 curated learning repositories with stats
+- ✅ **Improved Contact Section** - Social media links with hover effects
+
+### UX/UI Improvements
+- ✅ Enhanced typography hierarchy (text-4xl/5xl for names, text-2xl for titles)
+- ✅ Consistent section spacing (gap-y-8)
+- ✅ Minimalist navbar design with smooth transitions
+- ✅ Outlined header button style with green border
+- ✅ Proper viewport scrolling with Intersection Observer
+
+---
+
+## 📁 Project Structure (OOP Architecture)
+
+```
 Portfolio/
 ├── public/
-│ └── assets/ # Images, resume files, etc.
+│   └── Images & assets
 ├── src/
-│ ├── components/ # Reusable UI components
-│ ├── contents/ # Section content & config (AboutSection, headers, Overview)
-│ ├── data/ # Data-only files (projects, learning, todo)
-│ ├── sections/ # Layout components (Navbar, RightSection, Footer)
-│ ├── assets/ # Images imported into src
-│ └── App.jsx # Main application entry
-├── README.md # Project overview & documentation
-└── ...
-
-
-
----
-
-## Data & Content Architecture
-
-- **src/data/**  
-  Contains data-only files for each section (projects, learning, todo)
-
-- **src/contents/**  
-  Contains section-specific components and the centralized section configuration  
-  (acts as the single source of truth for sections)
-
-- **src/sections/**  
-  Core layout and structural components such as Navbar, RightSection, and Footer
-
----
-
-## Section Management
-
-- All sections are defined in a centralized config file  
-  (e.g. `workspaceSections.js` / `Overview.js`)
-- Both **Navbar** and **RightSection** dynamically render sections from this config
-- Adding or removing a section requires changes in only one place
-- No hardcoded section IDs in layout components
+│   ├── components/          # UI Components (organized by responsibility)
+│   │   ├── Layout/          # Layout components
+│   │   │   ├── Header/      # Hero section with name & title
+│   │   │   ├── Navbar/      # Navigation menu
+│   │   │   ├── LeftSection/ # Sidebar container
+│   │   │   ├── RightSection/# Main content area
+│   │   │   └── Footer/      # Footer
+│   │   ├── Sections/        # Content sections
+│   │   │   ├── AboutSection.jsx     # Career intro & timeline
+│   │   │   ├── Timeline/            # Career milestones
+│   │   │   ├── TechStack/           # Skills display
+│   │   │   └── GitHubReposSection/  # Repository showcase
+│   │   └── Contact/         # Social links
+│   ├── constants/           # Centralized data files
+│   │   ├── header.js        # Hero data
+│   │   ├── timeline.js      # Career milestones
+│   │   ├── manualTesting.js # QA manual testing skills
+│   │   ├── automationTesting.js # QA automation skills
+│   │   └── githubRepos.js   # GitHub repositories
+│   ├── styles/              # CSS stylesheets
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── hooks/               # Custom React hooks
+│   ├── utils/               # Utility functions
+│   ├── App.jsx              # Main app component
+│   └── main.jsx             # Entry point
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 ---
 
-## Sidebar Navigation: Bug, Fix, and Result
+## 🎓 Content Sections
 
-### Problem
-- Section IDs containing spaces (e.g. `Learning & Research-section`) break  
-  `document.getElementById`
-- Sidebar scroll and active highlighting fail for such sections
+### 1. **About Section**
+- Introduction to my QA learning journey
+- Career vision with systems thinking mindset
+- Integrated career timeline
 
-### Solution
-- Always use space-free section IDs  
-  (e.g. `LearningAndResearch-section`, `ToDo-section`)
-- Keep display titles human-readable
-- Ensure Navbar and DOM sections use the exact same IDs
-- Detect the active section using `getBoundingClientRect().top`
-- Use `scrollIntoView()` for sidebar click navigation
+### 2. **QA Manual Testing**
+- **Test Design Techniques** (5 items)
+  - Equivalence Partitioning, Boundary Value Analysis, Decision Table Testing, State Transition, Risk-Based Testing
+- **Test Scenarios & Coverage** (5 items)
+  - Positive/Negative scenarios, Edge cases, Performance testing, User acceptance
+- **QA Concepts** (5 items)
+  - Quality metrics, Bug reporting, Root cause analysis, Test metrics
 
-### Result
-✅ Sidebar scrolling and active highlighting work correctly for all sections,  
-including those with display titles that contain spaces.
+### 3. **QA Automation Testing**
+- **Automation Framework** (5 items)
+  - JavaScript, React, Playwright, Git, Test organization
+- **Test Organization** (5 items)
+  - Page Object Model, Test helpers, Fixtures, Configuration, Best practices
+- **CI/CD & Analytics** (5 items)
+  - Pipeline integration, Test reporting, Performance monitoring, Analytics, Compliance
+
+### 4. **GitHub Repositories**
+- 5 curated learning repositories:
+  1. **javascript-for-test-automation** - JS fundamentals
+  2. **qa-learning-journey-repository** - QA concepts & methodologies
+  3. **qa-saucedemo-test-automation** - Playwright automation
+  4. **qa-saucedemo-test-design** - Test design & RTM
+  5. **Portfolio** - This project
+
+### 5. **Contact Section**
+- Social media links: Facebook, GitHub, LinkedIn
+- Located in bottom-left sidebar with hover effects
 
 ---
 
-## Notes
+## 🛠 Tech Stack
 
-This project is continuously evolving as a personal learning space.  
-The current architecture allows new sections and features to be added with minimal refactoring.
+- **Frontend Framework:** React 18.3.1
+- **Build Tool:** Vite 6.0.1 (with HMR on localhost:5173)
+- **Styling:** Tailwind CSS 3.4.17
+- **Icons:** FontAwesome (free-solid, free-brands)
+- **Layout:** Two-column responsive grid (40% sidebar, 60% content)
+
+---
+
+## 📐 Architecture Principles
+
+### Separation of Concerns
+- **Components** - Pure UI rendering
+- **Constants** - Data and configuration
+- **Styles** - CSS organization
+- **Hooks** - Reusable logic
+- **Utils** - Helper functions
+
+### Data Flow
+- Centralized data in `/constants/` folder
+- Components import data as needed
+- Single source of truth for each data type
+- Easy to update content without touching components
+
+### Scalability
+- Adding new sections requires:
+  1. Create data file in `constants/`
+  2. Create section component in `components/Sections/`
+  3. Update `RightSection` to include new section
+  4. Create content in new file
+
+---
+
+## 🎨 Design System
+
+- **Color Scheme:** Dark mode with green accent (#10b981)
+- **Typography:** 
+  - Hero name: `text-4xl md:text-5xl`
+  - Section titles: `text-xl md:text-2xl`
+  - Body text: `text-sm md:text-base`
+- **Spacing:** `gap-y-8` between sections
+- **Transitions:** Smooth hover effects (300ms duration)
+
+---
+
+## 📝 Notes
+
+This portfolio is a living document of my learning journey. It evolves continuously as I progress through my QA and DevOps learning path. The clean architecture allows easy updates and serves as a reference for React best practices.
+
+**Personal Learning Goals:**
+- Master QA Manual Testing Techniques
+- Build strong Automation Testing skills (Playwright, JavaScript)
+- Understand DevOps concepts and CI/CD workflows
+- Practice systems thinking in quality assurance
+
+
