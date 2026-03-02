@@ -1,3 +1,4 @@
+// Footer Component - Simple footer with copyright and GitHub link
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 

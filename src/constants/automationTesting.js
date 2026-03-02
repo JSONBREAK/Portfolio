@@ -1,3 +1,5 @@
+// QA Automation Testing Skills - Organized into 3 categories
+// Categories: Automation Framework, Test Organization, CI/CD & Analytics
 import {
   faJs,
   faReact,

@@ -1,3 +1,5 @@
+// GitHub Repositories - 5 learning repositories showcasing QA expertise journey
+// Includes: JS fundamentals, QA concepts, SauceDemoTest automation project, test design, and Portfolio
 export const githubRepos = [
     {
         name: "javascript-for-test-automation",
