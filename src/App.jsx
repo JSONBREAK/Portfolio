@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './App.css';
-import LeftSection from './sections/LeftSection';
-import RightSection from './sections/RightSection';
+import './styles/App.css';
+import LeftSection from './components/Layout/LeftSection';
+import RightSection from './components/Layout/RightSection';
 
 function App() {
     return (
