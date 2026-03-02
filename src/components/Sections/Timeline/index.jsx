@@ -5,7 +5,7 @@ const Timeline = () => {
     <div className="mb-8">
       {/* Timeline - Milestones Heading */}
       <div className="mb-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-green-400 mb-1">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-300 mb-1">
           Milestones
         </h2>
         <p className="text-gray-500 text-xs">

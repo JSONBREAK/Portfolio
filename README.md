@@ -1,5 +1,5 @@
 # QA Learning Journey Portfolio (React + Vite)
-
+## BaseUrl: https://jetsurachok.netlify.app/
 **Last Updated:** March 2, 2026
 
 A modern, responsive portfolio showcasing my complete QA and automation testing learning journey - from fundamentals to DevOps aspirations. Built with React, Vite, and Tailwind CSS.
