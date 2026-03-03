@@ -8,7 +8,8 @@ A modern, responsive portfolio website built in my spare time outside of my form
 
 ## 🎯 About This Portfolio
 
-- **Personal Portfolio** documenting 5 years of learning: CPE → IT Break → QA Manual → QA Automation → DevOps
+- **Personal Portfolio** documenting my structured learning path:
+  QA Manual → QA Automation → DevOps & Cloud Foundations
 - **Interactive Timeline** visualizing career milestones and learning progression
 - **QA Skills Showcase** with manual testing techniques and automation framework experience
 - **GitHub Repository** links to 5 learning repositories
