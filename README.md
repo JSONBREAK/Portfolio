@@ -2,7 +2,7 @@
 ## BaseUrl: https://jetsurachok.netlify.app/
 **Last Updated:** March 2, 2026
 
-A modern, responsive portfolio showcasing my complete QA and automation testing learning journey - from fundamentals to DevOps aspirations. Built with React, Vite, and Tailwind CSS.
+A modern, responsive portfolio website built in my spare time outside of my formal studies. Created as part of my continuous learning journey, it documents my progress, showcases my projects, and tracks my future learning aspirations. Built with React, Vite, and Tailwind CSS.
 
 ---
 
