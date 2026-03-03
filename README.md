@@ -1,179 +1,180 @@
 # QA Learning Journey Portfolio (React + Vite)
-## BaseUrl: https://jetsurachok.netlify.app/
-**Last Updated:** March 2, 2026
 
-A modern, responsive portfolio website built in my spare time outside of my formal studies. Created as part of my continuous learning journey, it documents my progress, showcases my projects, and tracks my future learning aspirations. Built with React, Vite, and Tailwind CSS.
+**BaseUrl:** https://jetsurachok.netlify.app/  
+**Last Updated:** March 4, 2026
 
----
-
-## 🎯 About This Portfolio
-
-- **Personal Portfolio** documenting my structured learning path:
-  QA Manual → QA Automation → DevOps & Cloud Foundations
-- **Interactive Timeline** visualizing career milestones and learning progression
-- **QA Skills Showcase** with manual testing techniques and automation framework experience
-- **GitHub Repository** links to 5 learning repositories
-- **Responsive Design** with clean sidebar navigation (40% left, 60% right content)
-- **OOP Architecture** with organized component structure and centralized data management
+This project is my structured QA learning journal. It documents my evolution from manual testing foundations to automation and DevOps thinking through small, practical projects.
 
 ---
 
-## 🚀 Recent Updates (2026)
+## 👤 About Me
 
-### Code Architecture Restructuring
-- ✅ Implemented OOP principles with organized folder structure
-- ✅ Separated components by responsibility: **Layout**, **Sections**, **Contact**
-- ✅ Centralized data in **constants/** folder
-- ✅ Organized styles in **styles/** folder
-- ✅ Updated all import paths for better maintainability
+**Name:** Jet Surachok  
+**Title:** QA Engineer — API & System Validation  
+**Bio:** I build small to medium-scale projects to improve my skills in web development, APIs, and system design—documenting my learning along the way.
 
-### New Features
-- ✅ **Timeline Component** - Career milestones visualization
-- ✅ **QA Manual Testing Section** - 15 test design techniques and QA concepts
-- ✅ **QA Automation Testing Section** - Framework knowledge, CI/CD, test automation
-- ✅ **GitHub Repositories Section** - 5 curated learning repositories with stats
-- ✅ **Improved Contact Section** - Social media links with hover effects
-
-### UX/UI Improvements
-- ✅ Enhanced typography hierarchy (text-4xl/5xl for names, text-2xl for titles)
-- ✅ Consistent section spacing (gap-y-8)
-- ✅ Minimalist navbar design with smooth transitions
-- ✅ Outlined header button style with green border
-- ✅ Proper viewport scrolling with Intersection Observer
+### Technical Skills
+- **Programming:** Python, JavaScript, SQL
+- **Automation:** Playwright, Node.js
+- **Web Fundamentals:** HTML, CSS, React
+- **Tools:** Git, Docker (Basic)
 
 ---
 
-## 📁 Project Structure (OOP Architecture)
+## 🎯 Learning Journey
 
-```
-Portfolio/
-├── public/
-│   └── Images & assets
-├── src/
-│   ├── components/          # UI Components (organized by responsibility)
-│   │   ├── Layout/          # Layout components
-│   │   │   ├── Header/      # Hero section with name & title
-│   │   │   ├── Navbar/      # Navigation menu
-│   │   │   ├── LeftSection/ # Sidebar container
-│   │   │   ├── RightSection/# Main content area
-│   │   │   └── Footer/      # Footer
-│   │   ├── Sections/        # Content sections
-│   │   │   ├── AboutSection.jsx     # Career intro & timeline
-│   │   │   ├── Timeline/            # Career milestones
-│   │   │   ├── TechStack/           # Skills display
-│   │   │   └── GitHubReposSection/  # Repository showcase
-│   │   └── Contact/         # Social links
-│   ├── constants/           # Centralized data files
-│   │   ├── header.js        # Hero data
-│   │   ├── timeline.js      # Career milestones
-│   │   ├── manualTesting.js # QA manual testing skills
-│   │   ├── automationTesting.js # QA automation skills
-│   │   └── githubRepos.js   # GitHub repositories
-│   ├── styles/              # CSS stylesheets
-│   │   ├── App.css
-│   │   └── index.css
-│   ├── hooks/               # Custom React hooks
-│   ├── utils/               # Utility functions
-│   ├── App.jsx              # Main app component
-│   └── main.jsx             # Entry point
-├── package.json
-├── vite.config.js
-└── README.md
-```
+## 🗂 Career Timeline
+
+### 2016-2021: CPE - Computer Engineering
+Graduated with foundational knowledge in software development, system architecture, and problem-solving fundamentals.
+
+### 2021-2024: Family Business & Professional Growth  
+Supported and expanded the family business after graduation. Developed operational discipline and problem-solving mindset before transitioning back into the IT industry.
+
+### 2025–Present: QA Manual Testing 🔄 **Ongoing Practice**
+Deepening my foundation in quality assurance through structured manual testing practices. Focusing on test design techniques, requirement analysis, test coverage strategy, and defect lifecycle management. Developing a systematic and risk-based approach to ensuring product quality.
+
+### 2025–Present: QA Automation Testing 🤖 **Ongoing Practice**
+Focusing on JavaScript-driven test automation with emphasis on test isolation and reducing flaky tests. Practicing Playwright test design using Page Object Model principles for independent test execution. Building clear automation patterns with stable selectors and isolated test data.
+
+### Future Direction: DevOps & Cloud Foundations 🚀 **Upcoming**
+Building on QA automation foundation to understand CI/CD pipelines, basic cloud concepts, and deployment practices. Planning to explore AWS fundamentals and how quality fits into modern deployment workflows.
 
 ---
 
-## 🎓 Content Sections
+## 🎓 QA Expertise
 
-### 1. **About Section**
-- Introduction to my QA learning journey
-- Career vision with systems thinking mindset
-- Integrated career timeline
+### 1. **Manual Testing**
 
-### 2. **QA Manual Testing**
-- **Test Design Techniques** (5 items)
-  - Equivalence Partitioning, Boundary Value Analysis, Decision Table Testing, State Transition, Risk-Based Testing
-- **Test Scenarios & Coverage** (5 items)
-  - Positive/Negative scenarios, Edge cases, Performance testing, User acceptance
-- **QA Concepts** (5 items)
-  - Quality metrics, Bug reporting, Root cause analysis, Test metrics
+I approach manual testing with **risk prioritization first**—validating business-critical paths before edge cases, using design techniques to maximize coverage efficiency.
 
-### 3. **QA Automation Testing**
-- **Automation Framework** (5 items)
-  - JavaScript, React, Playwright, Git, Test organization
-- **Test Organization** (5 items)
-  - Page Object Model, Test helpers, Fixtures, Configuration, Best practices
-- **CI/CD & Analytics** (5 items)
-  - Pipeline integration, Test reporting, Performance monitoring, Analytics, Compliance
+#### Test Design Techniques
+- Equivalence Partitioning
+- Boundary Value Analysis
+- Decision Table Testing
+- State Transition Testing
+- Risk-Based Testing
+- Test Case Prioritization
 
-### 4. **GitHub Repositories**
-- 5 curated learning repositories:
-  1. **javascript-for-test-automation** - JS fundamentals
-  2. **qa-learning-journey-repository** - QA concepts & methodologies
-  3. **qa-saucedemo-test-automation** - Playwright automation
-  4. **qa-saucedemo-test-design** - Test design & RTM
-  5. **Portfolio** - This project
+#### Test Scenarios & Coverage
+- Positive Scenarios
+- Negative Scenarios
+- Validation Testing
+- Edge Case & Exploratory Testing
+- Business Flow Testing
 
-### 5. **Contact Section**
-- Social media links: Facebook, GitHub, LinkedIn
-- Located in bottom-left sidebar with hover effects
+#### Quality & Traceability
+- Defect Management
+- Severity & Priority Assessment
+- RTM (Requirement Traceability Matrix)
+- Test Reporting & Metrics
+- STLC Framework Implementation
+- Root Cause Analysis
+
+### 2. **Automation Testing**
+
+I design automation with **reliability and determinism** as the foundation—prioritizing test isolation, stable selectors, and clear data boundaries to eliminate flakiness and build confidence in CI/CD pipelines.
+
+#### Framework & Architecture
+- Playwright (Modern E2E Testing)
+- Page Object Model (POM)
+- JavaScript/Node.js
+- Reliable & Isolated Test Design
+- Test Data Fixtures
+
+#### Test Organization
+- Smoke Tests
+- Regression Tests
+- Business Flow-Driven Testing
+- Isolated & Stateless Tests
+- Risk-Based Prioritization
+
+#### CI/CD & Quality
+- Parallel Execution
+- CI/CD Pipeline Integration
+- Failure Screenshots & Artifacts
+- HTML Reporting
+- Flaky Test Prevention Strategies
+
+### 3. **GitHub Repositories** (5 Learning Projects)
+
+1. **javascript-for-test-automation**
+   - Building reliable automation through strong JavaScript fundamentals
+   - Focus: Core language patterns, async handling, DOM manipulation
+
+2. **qa-learning-journey-repository**
+   - Structured QA knowledge base covering test design, risk analysis, STLC, and practical validation frameworks
+   - Focus: Test design techniques, risk-based prioritization, STLC framework
+
+3. **qa-saucedemo-test-automation**
+   - E2E test automation framework using Playwright (POM) and JavaScript
+   - Focus: Test isolation, reliable selectors, CI-ready execution
+
+4. **qa-saucedemo-test-design**
+   - Manual test design documentation including STLC workflow, requirement traceability matrix (RTM), and risk-based scenario planning
+   - Focus: RTM creation, scenario planning, defect lifecycle
+
+5. **Frontend Practice** (This Portfolio)
+   - Feature-based React architecture with separation of concerns
+   - Focus: Modular design, feature isolation, data layer separation
+
+---
+
+## 🧠 My QA Philosophy
+
+**Quality is Risk Management**  
+Testing isn't about finding all bugs—it's about identifying and mitigating the risks that matter most.
+
+**Validation > Execution**  
+A well-designed test case reveals truth about the system. Volume of tests is secondary to clarity of intention.
+
+**Isolation is Reliability**  
+Tests that depend on each other or external systems are brittle. True reliability comes from independent validation.
+
+**Automation is Determinism**  
+Reliable automation means the test produces the same result when nothing changes—no flakiness, no false positives.
+
+### Contact & Social Links
+Connect with me on social media platforms accessible through the portfolio's footer section.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend Framework:** React 18.3.1
-- **Build Tool:** Vite 6.0.1 (with HMR on localhost:5173)
-- **Styling:** Tailwind CSS 3.4.17
-- **Icons:** FontAwesome (free-solid, free-brands)
-- **Layout:** Two-column responsive grid (40% sidebar, 60% content)
+| Technology | Purpose |
+|-----------|----------|
+| **React 18** | UI framework |
+| **Vite** | Build & dev server |
+| **Tailwind CSS** | Utility-first styling |
+| **Node.js** | Runtime environment |
+| **ESLint** | Code quality |
+| **FontAwesome** | Icon library |
 
 ---
 
-## 📐 Architecture Principles
+## 📝 Available Scripts
 
-### Separation of Concerns
-- **Components** - Pure UI rendering
-- **Constants** - Data and configuration
-- **Styles** - CSS organization
-- **Hooks** - Reusable logic
-- **Utils** - Helper functions
+```bash
+# Development server
+npm run dev
 
-### Data Flow
-- Centralized data in `/constants/` folder
-- Components import data as needed
-- Single source of truth for each data type
-- Easy to update content without touching components
+# Build for production
+npm run build
 
-### Scalability
-- Adding new sections requires:
-  1. Create data file in `constants/`
-  2. Create section component in `components/Sections/`
-  3. Update `RightSection` to include new section
-  4. Create content in new file
+# Lint code
+npm run lint
+```
 
----
 
-## 🎨 Design System
-
-- **Color Scheme:** Dark mode with green accent (#10b981)
-- **Typography:** 
-  - Hero name: `text-4xl md:text-5xl`
-  - Section titles: `text-xl md:text-2xl`
-  - Body text: `text-sm md:text-base`
-- **Spacing:** `gap-y-8` between sections
-- **Transitions:** Smooth hover effects (300ms duration)
-
----
 
 ## 📝 Notes
 
-This portfolio is a living document of my learning journey. It evolves continuously as I progress through my QA and DevOps learning path. The clean architecture allows easy updates and serves as a reference for React best practices.
+This portfolio is a living technical document that evolves alongside my QA Automation and DevOps & Cloud Foundations journey. It reflects not only what I build, but how I approach system quality, reliability, and scalable engineering practices.
 
 **Personal Learning Goals:**
-- Master QA Manual Testing Techniques
-- Build strong Automation Testing skills (Playwright, JavaScript)
-- Understand DevOps concepts and CI/CD workflows
-- Practice systems thinking in quality assurance
+- Master QA Manual Testing (test design, risk analysis, STLC)
+- Build reliable Automation (Playwright isolation, test independence)
+- Understand CI/CD as a quality tool (pipeline integration, failure feedback)
+- Explore DevOps fundamentals (deployment safety, observability basics)
 
 
