@@ -21,10 +21,6 @@ export const techStackData = {
   testing: [
     { name: "Playwright" },
     { name: "Postman" },
-    { name: "Manual Testing" },
-    { name: "Test Design Techniques" },
-    { name: "Risk-Based Testing" },
-    { name: "Regression Testing" },
   ],
   ci_cd: [
     { name: "GitHub Actions" },
