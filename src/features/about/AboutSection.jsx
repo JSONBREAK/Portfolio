@@ -11,7 +11,7 @@ const AboutSection = memo(function AboutSection() {
           About Me
         </h1>
         <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl">
-          {profileData.caption}
+          {profileData.aboutme}
         </p>
       </div>
 

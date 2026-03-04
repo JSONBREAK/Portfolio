@@ -1,52 +1,52 @@
 export const githubRepos = [
   {
     name: "javascript-for-test-automation",
-    description: "Building reliable automation through strong JavaScript fundamentals",
+    description: "Strengthening JavaScript fundamentals for test automation, focusing on data handling, immutability, and isolation principles for reliable test design.",
     language: "JavaScript",
     languageColor: "#f7df1e",
     stars: 0,
     updated: "2026-02-19",
     link: "https://github.com/JSONBREAK/javascript-for-test-automation",
-    topics: ["automation", "javascript", "testing"]
+    topics: ["javascript", "data-handling", "immutability", "test-isolation"]
   },
   {
     name: "qa-learning-journey-repository",
-    description: "Structured QA knowledge base covering test design, risk analysis, STLC, and practical validation frameworks",
+    description: "Structured QA knowledge base covering STLC, test design techniques (Equivalence Partitioning, Boundary Value Analysis, Decision Tables), risk-based testing, defect management, SQL, API testing, and Playwright fundamentals with practical examples.",
     language: "Markdown",
     languageColor: "#083fa1",
     stars: 0,
     updated: "2026-02-26",
     link: "https://github.com/JSONBREAK/qa-learning-journey-repository",
-    topics: ["qa", "testing", "learning"]
+    topics: ["stlc", "test-design", "risk-based-testing", "defect-management"]
   },
   {
     name: "qa-saucedemo-test-automation",
-    description: "Deterministic E2E automation framework using Playwright (POM) with isolated test design, CI-ready execution, and flaky test prevention strategy",
+    description: "End-to-end automation framework using Playwright with Page Object Model (POM), isolated test architecture, CI integration, and strategies to minimize flaky tests.",
     language: "JavaScript",
     languageColor: "#f7df1e",
     stars: 0,
     updated: "2026-03-01",
     link: "https://github.com/JSONBREAK/qa-saucedemo-test-automation",
-    topics: ["playwright", "automation", "testing", "e2e"]
+    topics: ["playwright", "e2e-testing", "pom", "ci", "regression"]
   },
   {
     name: "qa-saucedemo-test-design",
-    description: "Manual test design documentation including STLC workflow, requirement traceability matrix (RTM), and risk-based scenario planning",
+    description: "Manual QA project applying STLC methodology, requirement analysis, positive and negative test scenarios, Requirement Traceability Matrix (RTM), and defect reporting for authentication, cart, and checkout workflows.",
     language: "Markdown",
     languageColor: "#083fa1",
     stars: 0,
     updated: "2026-02-23",
     link: "https://github.com/JSONBREAK/qa-saucedemo-test-design",
-    topics: ["testing", "qa", "test-design", "stlc"]
+    topics: ["manual-testing", "test-scenarios", "rtm", "functional-testing"]
   },
   {
     name: "Portfolio",
-    description: "A personal playground project built with React, Vite, and TailwindCSS to practice frontend structure, component design, and clean UI implementation.",
+    description: "Personal portfolio built with React, Vite, and TailwindCSS, featuring reusable components, custom hooks, responsive design, and structured front-end architecture.",
     language: "JavaScript",
     languageColor: "#f7df1e",
     stars: 0,
-    updated: "2026-01-30",
+    updated: "2026-03-04",
     link: "https://github.com/JSONBREAK/Portfolio",
-    topics: ["portfolio", "react", "web"]
+    topics: ["react", "vite", "tailwindcss", "frontend-architecture"]
   }
 ];

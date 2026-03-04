@@ -57,11 +57,11 @@ const GitHubReposSection = memo(function GitHubReposSection() {
             </div>
 
             {/* Topics */}
-            <div className="flex gap-1 flex-wrap justify-end max-w-[40%]">
-              {repo.topics.slice(0, 2).map((topic) => (
+            <div className="flex gap-1 flex-nowrap justify-end overflow-x-auto">
+              {repo.topics.map((topic) => (
                 <span
                   key={topic}
-                  className={TOPIC_BADGE}
+                  className={TOPIC_BADGE + " whitespace-nowrap"}
                 >
                   {topic}
                 </span>

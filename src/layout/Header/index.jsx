@@ -12,13 +12,13 @@ const Header = memo(() => {
       </div>
 
       {/* Title */}
-      <div className='text-base md:text-lg font-semibold text-primaryHeader pb-2 text-left'>
+      <div className='text-xs md:text-sm font-semibold text-primaryHeader pb-2 text-left'>
         {profileData.title}
       </div>
 
       {/* Caption */}
       <div className='text-sm md:text-base w-full max-w-2xl pb-4 text-left leading-relaxed text-gray-400'>
-        {profileData.caption}
+        {profileData.description}
       </div>
 
       {/* Resume Button */}
