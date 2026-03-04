@@ -1,4 +1,4 @@
-import SkillGrid from "../../shared/ui/SkillGrid";
+import SkillGrid from "../tech-stack/SkillCards";
 
 export default function QASection({
   id,
