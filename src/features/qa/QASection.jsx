@@ -1,6 +1,7 @@
+import { memo } from "react";
 import SkillGrid from "../tech-stack/SkillCards";
 
-export default function QASection({
+const QASection = memo(function QASection({
   id,
   title,
   description,
@@ -17,4 +18,6 @@ export default function QASection({
       <SkillGrid data={data} />
     </section>
   );
-}
+});
+
+export default QASection;

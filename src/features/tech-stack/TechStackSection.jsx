@@ -1,20 +1,18 @@
+import { memo } from "react";
 import { techStackData } from "../../data/techStack";
+import { LEVEL_COLORS, BADGE_BASE, CARD_BASE, CARD_HOVER } from "../../shared/constants/classNames";
+import { cn } from "../../shared/utils/cn";
 
-export default function TechStackSection() {
-  const levelStyles = {
-    Basic: "text-amber-400",
-    Intermediate: "text-blue-400",
-    Advanced: "text-green-400",
-  };
+const CATEGORIES = [
+  { key: "programming", label: "Programming Languages", icon: "💻" },
+  { key: "frontend", label: "Frontend Development", icon: "🎨" },
+  { key: "backend", label: "Backend Development", icon: "⚙️" },
+  { key: "testing", label: "Testing & QA", icon: "🧪" },
+  { key: "ci_cd", label: "CI/CD & DevOps", icon: "🚀" },
+  { key: "tools", label: "Tools & Platforms", icon: "🛠️" },
+];
 
-  const categories = [
-    { key: "programming", label: "Programming Languages", icon: "💻" },
-    { key: "frontend", label: "Frontend Development", icon: "🎨" },
-    { key: "backend", label: "Backend Development", icon: "⚙️" },
-    { key: "testing", label: "Testing & QA", icon: "🧪" },
-    { key: "ci_cd", label: "CI/CD & DevOps", icon: "🚀" },
-    { key: "tools", label: "Tools & Platforms", icon: "🛠️" },
-  ];
+const TechStackSection = memo(function TechStackSection() {
 
   return (
     <section>
@@ -23,10 +21,10 @@ export default function TechStackSection() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
-        {categories.map((category) => (
+        {CATEGORIES.map((category) => (
           <div
             key={category.key}
-            className="h-full border border-gray-700 bg-gray-900/30 rounded-lg p-4 hover:bg-gray-800/50 hover:border-gray-600 transition-all duration-200"
+            className={cn("h-full rounded-lg", CARD_BASE, CARD_HOVER)}
           >
             <h3 className="text-base font-semibold text-gray-200 mb-3 flex items-center gap-2">
               <span>{category.icon}</span>
@@ -40,7 +38,7 @@ export default function TechStackSection() {
                 >
                   <span>{tech.name}</span>
                   {tech.level && (
-                    <span className={`text-xs ${levelStyles[tech.level]} px-2 py-1 rounded border border-gray-700`}>
+                    <span className={cn(BADGE_BASE, LEVEL_COLORS[tech.level])}>
                       {tech.level}
                     </span>
                   )}
@@ -52,4 +50,6 @@ export default function TechStackSection() {
       </div>
     </section>
   );
-}
+});
+
+export default TechStackSection;

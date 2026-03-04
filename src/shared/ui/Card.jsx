@@ -1,18 +1,14 @@
-/**
- * Card Component - Reusable card wrapper for consistent styling
- * 
- * Props:
- * - children: ReactNode
- * - className: string (optional, for additional styling)
- * - hover: boolean (optional, default true - adds hover effects)
- */
-export default function Card({ children, className = "", hover = true }) {
-  const baseStyles = "rounded-lg border border-gray-700 bg-gray-900/30 p-4";
-  const hoverStyles = hover ? "hover:bg-gray-800/50 hover:border-gray-600 transition-all duration-200" : "";
-  
+import { memo } from 'react';
+import { CARD_BASE, CARD_HOVER } from '../constants/classNames';
+import { cn } from '../utils/cn';
+
+const Card = memo(function Card({ children, className = "", hover = true }) {
   return (
-    <div className={`${baseStyles} ${hoverStyles} ${className}`}>
+    <div className={cn(CARD_BASE, hover && CARD_HOVER, className)}>
       {children}
     </div>
   );
-}
+});
+
+Card.displayName = 'Card';
+export default Card;

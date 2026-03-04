@@ -1,18 +1,21 @@
+import { memo } from "react";
 import { githubRepos } from "../../data/githubRepos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faStar, faCodeBranch, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { CARD_BASE, CARD_HOVER, TOPIC_BADGE } from "../../shared/constants/classNames";
+import { cn } from "../../shared/utils/cn";
 
-const GitHubReposSection = () => {
+const GitHubReposSection = memo(function GitHubReposSection() {
   return (
     <div className="space-y-3">
-      {githubRepos.map((repo, index) => (
+      {githubRepos.map((repo) => (
         <a
-          key={index}
+          key={repo.name}
           href={repo.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="block p-4 rounded-lg border border-gray-700 bg-gray-900/30 hover:bg-gray-800/50 hover:border-gray-600 transition-all duration-200 group"
+          className={cn("block rounded-lg group", CARD_BASE, CARD_HOVER)}
         >
           {/* Header: Name + Language Badge */}
           <div className="flex items-center justify-between mb-2">
@@ -55,10 +58,10 @@ const GitHubReposSection = () => {
 
             {/* Topics */}
             <div className="flex gap-1 flex-wrap justify-end max-w-[40%]">
-              {repo.topics.slice(0, 2).map((topic, i) => (
+              {repo.topics.slice(0, 2).map((topic) => (
                 <span
-                  key={i}
-                  className="px-2 py-0.5 rounded-full text-xs bg-gray-800 text-gray-300 border border-gray-700"
+                  key={topic}
+                  className={TOPIC_BADGE}
                 >
                   {topic}
                 </span>
@@ -69,6 +72,6 @@ const GitHubReposSection = () => {
       ))}
     </div>
   );
-};
+});
 
 export default GitHubReposSection;

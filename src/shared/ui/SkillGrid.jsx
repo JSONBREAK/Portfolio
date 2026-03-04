@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SkillGrid = ({ data = [] }) => {
+const SkillGrid = memo(function SkillGrid({ data = [] }) {
   return (
     <div className="space-y-3">
       {data.map((category, idx) => (
@@ -16,9 +17,9 @@ const SkillGrid = ({ data = [] }) => {
 
           {/* Items Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-            {category.items.map((item, index) => (
+            {category.items.map((item) => (
               <div
-                key={index}
+                key={item.name}
                 className="rounded px-3 py-2 border border-gray-700 hover:border-gray-600 transition bg-gray-900/50 flex items-center gap-2 text-sm group"
               >
                 <FontAwesomeIcon
@@ -35,4 +36,5 @@ const SkillGrid = ({ data = [] }) => {
   );
 };
 
+SkillGrid.displayName = 'SkillGrid';
 export default SkillGrid;

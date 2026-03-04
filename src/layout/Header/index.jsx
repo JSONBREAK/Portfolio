@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { profileData } from '../../data/profile';
 
-const Header = () => {
+const Header = memo(() => {
   return (
     <div className='flex flex-col gap-3 max-w-4xl mx-auto px-5'>
       {/* Name */}
@@ -31,6 +32,7 @@ const Header = () => {
       </div>
     </div>
   );
-};
+});
 
+Header.displayName = 'Header';
 export default Header;

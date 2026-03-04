@@ -1,8 +1,8 @@
-// Footer Component - Simple footer with copyright and GitHub link
+import { memo } from 'react';
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Footer = () => {
+const Footer = memo(() => {
     return(
         <div className="mt-12 pt-8 border-t border-gray-800">
             <div className="flex justify-between items-center text-xs text-gray-500">
@@ -16,6 +16,7 @@ const Footer = () => {
             </div>
         </div>
     )
-}
+});
 
+Footer.displayName = 'Footer';
 export default Footer;

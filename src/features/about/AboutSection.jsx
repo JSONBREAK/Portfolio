@@ -1,7 +1,8 @@
+import { memo } from "react";
 import Timeline from "../timeline/TimelineSection";
 import { profileData } from "../../data/profile";
 
-export default function AboutSection() {
+const AboutSection = memo(function AboutSection() {
   return (
     <section>
       {/* Hero Section */}
@@ -18,4 +19,6 @@ export default function AboutSection() {
       <Timeline />
     </section>
   );
-}
+});
+
+export default AboutSection;
