@@ -5,15 +5,16 @@ const QASection = memo(function QASection({
   id,
   title,
   description,
-  data = []
+  data = [],
+  titleColor = "text-green-400"
 }) {
   return (
     <section id={id} className="scroll-mt-24">
-      <div className="mb-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-green-400 mb-1">
+      <div className="mb-6">
+        <h2 className={`text-2xl md:text-3xl font-semibold ${titleColor} mb-1`}>
           {title}
         </h2>
-        <p className="text-gray-500 text-xs">{description}</p>
+        <p className="text-gray-500 text-sm">{description}</p>
       </div>
       <SkillGrid data={data} />
     </section>

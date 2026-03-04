@@ -1,47 +1,54 @@
 import { memo } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFlask, faCog, faLaptop, faCode, faServer, faTools } from "@fortawesome/free-solid-svg-icons";
 import { techStackData } from "../../data/techStack";
-import { LEVEL_COLORS, BADGE_BASE, CARD_BASE, CARD_HOVER } from "../../shared/constants/classNames";
+import { CARD_BASE, CARD_HOVER } from "../../shared/constants/classNames";
 import { cn } from "../../shared/utils/cn";
 
-const CATEGORIES = [
-  { key: "programming", label: "Programming Languages", icon: "💻" },
-  { key: "frontend", label: "Frontend Development", icon: "🎨" },
-  { key: "backend", label: "Backend Development", icon: "⚙️" },
-  { key: "testing", label: "Testing & QA", icon: "🧪" },
-  { key: "ci_cd", label: "CI/CD & DevOps", icon: "🚀" },
-  { key: "tools", label: "Tools & Platforms", icon: "🛠️" },
+const TECH_CATEGORIES = [
+  { key: "programming", label: "Programming", icon: faLaptop, color: "text-green-400" },
+  { key: "frontend", label: "Frontend", icon: faCode, color: "text-blue-400" },
+  { key: "backend", label: "Backend", icon: faServer, color: "text-purple-400" },
+  { key: "testing", label: "Test Automation", icon: faFlask, color: "text-green-400" },
+  { key: "ci_cd", label: "CI/CD", icon: faCog, color: "text-blue-400" },
+  { key: "tools", label: "Tooling", icon: faTools, color: "text-gray-300" },
 ];
 
 const TechStackSection = memo(function TechStackSection() {
-
   return (
     <section>
-      <h2 className="text-2xl md:text-3xl font-bold text-green-400 mb-6">
-        Tech Stack
-      </h2>
+      <div className="mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-green-400 mb-1">
+          Technical Stack
+        </h2>
+        <p className="text-gray-500 text-sm">Core technologies and tools for QA automation, CI/CD, and web development.</p>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
-        {CATEGORIES.map((category) => (
+      <div className="space-y-4">
+        {TECH_CATEGORIES.map((category) => (
           <div
             key={category.key}
-            className={cn("h-full rounded-lg", CARD_BASE, CARD_HOVER)}
+            className={cn("rounded-lg", CARD_BASE, CARD_HOVER)}
           >
-            <h3 className="text-base font-semibold text-gray-200 mb-3 flex items-center gap-2">
-              <span>{category.icon}</span>
-              {category.label}
-            </h3>
-            <div className="space-y-2">
+            {/* Category Header */}
+            <div className="flex items-center gap-3 mb-4">
+              <FontAwesomeIcon
+                icon={category.icon}
+                className={`text-lg ${category.color}`}
+              />
+              <h3 className="text-sm font-medium text-gray-100 uppercase tracking-wide">
+                {category.label}
+              </h3>
+            </div>
+
+            {/* Items List */}
+            <div className="flex flex-wrap gap-2">
               {(techStackData[category.key] || []).map((tech) => (
                 <div
                   key={tech.name}
-                  className="flex items-center justify-between text-gray-300 text-sm"
+                  className="px-3 py-1.5 rounded border border-gray-700 text-xs text-gray-300 hover:text-gray-100 hover:border-gray-600 transition-colors"
                 >
-                  <span>{tech.name}</span>
-                  {tech.level && (
-                    <span className={cn(BADGE_BASE, LEVEL_COLORS[tech.level])}>
-                      {tech.level}
-                    </span>
-                  )}
+                  {tech.name}
                 </div>
               ))}
             </div>

@@ -1,34 +1,32 @@
 import { memo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CARD_BASE, CARD_HOVER, SKILL_ITEM } from "../../shared/constants/classNames";
+import { CARD_BASE, CARD_HOVER } from "../../shared/constants/classNames";
 import { cn } from "../../shared/utils/cn";
 
 const SkillGrid = memo(function SkillGrid({ data = [] }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-4">
       {data.map((category) => (
         <div key={category.category} className={cn("rounded-lg", CARD_BASE, CARD_HOVER)}>
           {/* Category Header */}
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-3 mb-4">
             <FontAwesomeIcon
               icon={category.icon}
               className={`text-lg ${category.color}`}
             />
-            <h3 className="font-semibold text-gray-200">{category.category}</h3>
+            <h3 className="text-sm font-medium text-gray-100 uppercase tracking-wide">
+              {category.category}
+            </h3>
           </div>
 
-          {/* Items Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+          {/* Items List */}
+          <div className="flex flex-wrap gap-3">
             {category.items.map((item) => (
               <div
                 key={item.name}
-                className={cn(SKILL_ITEM, "flex items-center gap-2 text-sm group")}
+                className="px-3 py-1.5 rounded border border-gray-700 text-xs text-gray-300 hover:text-gray-100 hover:border-gray-600 transition-colors"
               >
-                <FontAwesomeIcon
-                  icon={item.icon}
-                  className="text-gray-500 text-xs group-hover:text-gray-400 transition"
-                />
-                <span className="text-gray-300 group-hover:text-gray-200 transition">{item.name}</span>
+                {item.name}
               </div>
             ))}
           </div>
@@ -38,4 +36,5 @@ const SkillGrid = memo(function SkillGrid({ data = [] }) {
   );
 });
 
+SkillGrid.displayName = "SkillGrid";
 export default SkillGrid;

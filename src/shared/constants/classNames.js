@@ -48,9 +48,9 @@ export const CARD_INTERACTIVE = `${CARD_BASE} ${CARD_HOVER} cursor-pointer`;
 
 // Feature-specific colors
 export const LEVEL_COLORS = {
-  Basic: "text-amber-400",
-  Intermediate: "text-blue-400",
-  Advanced: "text-green-400",
+  Basic: "bg-amber-500/10 text-amber-400 border border-amber-500/20",
+  Intermediate: "bg-blue-500/10 text-blue-400 border border-blue-500/20",
+  Advanced: "bg-green-500/10 text-green-400 border border-green-500/20",
 };
 
 export const TECH_COLORS = {
@@ -63,6 +63,6 @@ export const TECH_COLORS = {
 };
 
 // Component-specific patterns
-export const BADGE_BASE = "px-2 py-1 rounded border border-gray-700 text-xs";
+export const BADGE_BASE = "px-2.5 py-1.5 rounded text-xs font-medium";
 export const TOPIC_BADGE = `${SPACING.xs} rounded-full text-xs bg-gray-800 text-gray-300 border border-gray-700`;
-export const SKILL_ITEM = `rounded px-3 py-2 border border-gray-700 hover:border-gray-600 ${TRANSITIONS.all} bg-gray-900/50`;
+export const SKILL_ITEM = `rounded px-3 py-2 border border-gray-700 hover:border-gray-600 transition-all duration-200 bg-gray-900/50`;
