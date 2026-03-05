@@ -14,8 +14,8 @@ This project is my structured QA learning journal. It documents my evolution fro
 **Bio:** I build small to medium-scale projects to improve my skills in web development, APIs, and system design—documenting my learning along the way.
 
 ### Technical Skills
-- **Programming:** Python, JavaScript, SQL
-- **Automation:** Playwright, Node.js
+- **Programming:** JavaScript, TypeScript, Python, SQL
+- **Automation:** Playwright, Node.js, Postman
 - **Web Fundamentals:** HTML, CSS, React
 - **Tools:** Git, Docker (Basic)
 
