@@ -15,7 +15,7 @@ export const githubRepos = [
     language: "Markdown",
     languageColor: "#083fa1",
     stars: 0,
-    updated: "2026-02-26",
+    updated: "2026-03-16",
     link: "https://github.com/JSONBREAK/qa-learning-journey-repository",
     topics: ["stlc", "test-design", "risk-based-testing", "defect-management"]
   },
@@ -45,7 +45,7 @@ export const githubRepos = [
     language: "JavaScript",
     languageColor: "#f7df1e",
     stars: 0,
-    updated: "2026-03-04",
+    updated: "2026-03-24",
     link: "https://github.com/JSONBREAK/Portfolio",
     topics: ["react", "vite", "tailwindcss", "frontend-architecture"]
   }

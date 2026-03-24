@@ -9,7 +9,7 @@ import Footer from "../Footer/index.jsx";
 
 const RightSection = () => {
   return (
-    <div className="space-y-16 px-5 lg:border-none border-t border-gray-800 lg:pt-0 pt-8">
+    <div className="space-y-12 lg:space-y-16 px-5 lg:border-none border-t border-gray-800/60 lg:pt-0 pt-6 pb-10 lg:pb-0">
       {/* About Section */}
       <section id="About-section" className="scroll-mt-24">
         <AboutSection />

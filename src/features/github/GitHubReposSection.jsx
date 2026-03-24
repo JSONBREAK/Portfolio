@@ -41,7 +41,7 @@ const GitHubReposSection = memo(function GitHubReposSection() {
           </p>
 
           {/* Footer: Stats + Topics */}
-          <div className="flex items-center justify-between text-xs">
+          <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between text-xs">
             {/* Stats */}
             <div className="flex items-center gap-4 text-gray-500">
               {repo.stars > 0 && (
@@ -57,7 +57,7 @@ const GitHubReposSection = memo(function GitHubReposSection() {
             </div>
 
             {/* Topics */}
-            <div className="flex gap-1 flex-nowrap justify-end overflow-x-auto">
+            <div className="flex gap-1 flex-wrap lg:flex-nowrap lg:justify-end overflow-x-auto lg:overflow-visible pb-1 lg:pb-0">
               {repo.topics.map((topic) => (
                 <span
                   key={topic}
