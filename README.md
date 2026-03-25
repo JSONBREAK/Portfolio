@@ -1,7 +1,7 @@
 # QA Learning Journey Portfolio (React + Vite)
 
 **BaseUrl:** https://jetsurachok.netlify.app/  
-**Last Updated:** March 4, 2026
+**Last Updated:** March 25, 2026
 
 This project is my structured QA learning journal. It documents my evolution from manual testing foundations to automation and DevOps thinking through small, practical projects.
 
