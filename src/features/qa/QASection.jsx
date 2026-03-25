@@ -1,5 +1,6 @@
 import { memo } from "react";
-import SkillGrid from "../tech-stack/SkillCards";
+import { cn } from "../../shared/utils/cn";
+import SkillGrid from "../../shared/ui/SkillGrid";
 
 const QASection = memo(function QASection({
   id,
@@ -11,7 +12,7 @@ const QASection = memo(function QASection({
   return (
     <section id={id} className="scroll-mt-24">
       <div className="mb-6">
-        <h2 className={`text-2xl md:text-3xl font-semibold ${titleColor} mb-1`}>
+        <h2 className={cn("text-2xl md:text-3xl font-semibold mb-1", titleColor)}>
           {title}
         </h2>
         <p className="text-gray-500 text-sm">{description}</p>

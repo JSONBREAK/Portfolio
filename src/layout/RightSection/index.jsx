@@ -3,6 +3,7 @@ import TechStackSection from "../../features/tech-stack/TechStackSection";
 import QASection from "../../features/qa/QASection";
 import GitHubReposSection from "../../features/github/GitHubReposSection";
 
+import SectionTitle from "../../shared/ui/SectionTitle";
 import { manualTestingData } from "../../data/manualTesting";
 import { automationTestingData } from "../../data/automationTesting";
 import Footer from "../Footer/index.jsx";
@@ -40,10 +41,10 @@ const RightSection = () => {
 
       {/* GitHub Repositories Section */}
       <section id="GitHub-section" className="scroll-mt-24">
-        <div className="mb-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-green-400 mb-1">Engineering Evidence</h2>
-          <p className="text-gray-500 text-sm">Practical implementations showcasing QA expertise and technical growth.</p>
-        </div>
+        <SectionTitle 
+          title="Engineering Evidence" 
+          description="Practical implementations showcasing QA expertise and technical growth."
+        />
         <GitHubReposSection />
       </section>
 

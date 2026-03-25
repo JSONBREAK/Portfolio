@@ -1,15 +1,8 @@
 import { memo } from "react";
 import { useScrollDetection } from "../../shared/hooks/useScrollDetection";
 import { TRANSITIONS } from "../../shared/constants/classNames";
+import { NAV_ITEMS } from "../../shared/constants/navigation";
 import { cn } from "../../shared/utils/cn";
-
-const NAV_ITEMS = [
-  { title: "About", sectionId: "About-section" },
-  { title: "Tech Stack", sectionId: "TechStack-section" },
-  { title: "QA Manual", sectionId: "ManualTesting-section" },
-  { title: "QA Automation", sectionId: "AutomationTesting-section" },
-  { title: "GitHub", sectionId: "GitHub-section" },
-];
 
 const Navbar = memo(() => {
   const { currentSection, scrollToSection } = useScrollDetection(NAV_ITEMS);

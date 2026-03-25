@@ -1,32 +1,9 @@
 import { memo } from "react";
-import { faFacebook, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TEXT_COLORS } from "../../shared/constants/classNames";
+import { SOCIAL_LINKS, EMAIL } from "../../shared/constants/navigation";
 import { cn } from "../../shared/utils/cn";
-
-const SOCIAL_LINKS = [
-  {
-    id: "facebook",
-    url: "https://www.facebook.com/jetsur.24",
-    icon: faFacebook,
-    label: "Facebook",
-  },
-  {
-    id: "github",
-    url: "https://github.com/JSONBREAK",
-    icon: faGithub,
-    label: "GitHub",
-  },
-  {
-    id: "linkedin",
-    url: "https://www.linkedin.com/in/surachok-kaewchan/",
-    icon: faLinkedinIn,
-    label: "LinkedIn",
-  },
-];
-
-const EMAIL = "jet-surachok.job@hotmail.com";
 
 const Contact = memo(function Contact() {
   return (

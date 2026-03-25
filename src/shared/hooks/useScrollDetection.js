@@ -1,4 +1,21 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+
+/**
+ * Throttle function to limit function execution frequency
+ * @param {Function} func - Function to throttle
+ * @param {number} limit - Throttle interval in milliseconds
+ * @returns {Function} - Throttled function
+ */
+const throttle = (func, limit) => {
+  let inThrottle;
+  return function (...args) {
+    if (!inThrottle) {
+      func.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+};
 
 /**
  * Custom hook for detecting current section during scroll
@@ -7,6 +24,7 @@ import { useState, useEffect, useCallback } from 'react';
  */
 export const useScrollDetection = (items = []) => {
   const [currentSection, setCurrentSection] = useState("");
+  const throttledScrollRef = useRef(null);
 
   const handleScroll = useCallback(() => {
     if (window.scrollY < 8) {
@@ -34,8 +52,11 @@ export const useScrollDetection = (items = []) => {
   }, [items]);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Create throttled version of handleScroll (150ms throttle interval)
+    throttledScrollRef.current = throttle(handleScroll, 150);
+    
+    window.addEventListener('scroll', throttledScrollRef.current);
+    return () => window.removeEventListener('scroll', throttledScrollRef.current);
   }, [handleScroll]);
 
   const scrollToSection = (sectionId) => {

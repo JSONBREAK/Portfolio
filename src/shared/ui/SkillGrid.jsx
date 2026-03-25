@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CARD_BASE, CARD_HOVER, SKILL_ITEM } from "../constants/classNames";
 import { cn } from "../utils/cn";
+import CategoryHeader from "./CategoryHeader";
 
 const SkillGrid = memo(function SkillGrid({ data = [] }) {
   return (
@@ -9,13 +10,13 @@ const SkillGrid = memo(function SkillGrid({ data = [] }) {
       {data.map((category, idx) => (
         <div key={idx} className={cn("rounded-lg", CARD_BASE, CARD_HOVER)}>
           {/* Category Header */}
-          <div className="flex items-center gap-3 mb-3">
-            <FontAwesomeIcon
-              icon={category.icon}
-              className={`text-lg ${category.color}`}
-            />
-            <h3 className="font-semibold text-gray-100 tracking-wide">{category.category}</h3>
-          </div>
+          <CategoryHeader 
+            icon={category.icon}
+            label={category.category}
+            color={category.color}
+            className="mb-3"
+            iconClassName="text-lg"
+          />
           <div className="h-px bg-gray-800 mb-3" />
 
           {/* Items Grid */}
@@ -37,7 +38,7 @@ const SkillGrid = memo(function SkillGrid({ data = [] }) {
       ))}
     </div>
   );
-};
+});
 
 SkillGrid.displayName = 'SkillGrid';
 export default SkillGrid;
